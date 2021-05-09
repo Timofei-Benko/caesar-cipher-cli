@@ -1,11 +1,5 @@
 const args = require('minimist')(process.argv.slice(2));
-
-const errorHandler = (err) => {
-    if (err) {
-        process.stderr.write(err.message + '\n');
-        process.exit(1);
-    }
-}
+const errorHandler = require('./errorHandler')
 
 const getArgsObject = (args) => {
     if (!args.a && !args.action) {
