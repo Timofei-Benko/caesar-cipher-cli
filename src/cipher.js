@@ -29,10 +29,4 @@ const cipher = (args) => {
     return result;
 }
 
-console.log(cipher({
-    action: 'DECODE',
-    str: 'Aopz pz h zljyla! :)',
-    shift: 7,
-}))
-
 module.exports = cipher;
