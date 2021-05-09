@@ -1,6 +1,6 @@
 const cipher = (args) => {
 
-    if (args.action === 'DECODE') {
+    if (args.action === 'decode') {
         args.shift *= -1;
     }
 
