@@ -1,16 +1,16 @@
-function cipher(action = 'ENCODE', str, shift) {
+const cipher = (args) => {
 
-    if (action === 'DECODE') {
-        shift *= -1;
+    if (args.action === 'DECODE') {
+        args.shift *= -1;
     }
 
     const ALPHABET = 'abcdefghijklmnopqrstuvwxyz'.split('');
     let result = '';
 
-    for (let i = 0; i < str.length; i++) {
-        let isLowerCase = str[i] === str[i].toLowerCase();
+    for (let i = 0; i < args.str.length; i++) {
+        let isLowerCase = args.str[i] === args.str[i].toLowerCase();
 
-        let char = str[i].toLowerCase();
+        let char = args.str[i].toLowerCase();
         let index = ALPHABET.indexOf(char);
 
         if (index === -1) {
@@ -18,7 +18,7 @@ function cipher(action = 'ENCODE', str, shift) {
             continue;
         }
 
-        let encodedIndex = (index + shift) % ALPHABET.length;
+        let encodedIndex = (index + args.shift) % ALPHABET.length;
 
         if (encodedIndex < 0) encodedIndex += ALPHABET.length;
 
@@ -28,5 +28,11 @@ function cipher(action = 'ENCODE', str, shift) {
 
     return result;
 }
+
+console.log(cipher({
+    action: 'DECODE',
+    str: 'Aopz pz h zljyla! :)',
+    shift: 7,
+}))
 
 module.exports = cipher;
