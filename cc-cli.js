@@ -27,7 +27,7 @@ const trasformData = require('./src/transformData');
                 errorHandler(err);
             }
         });
-        targetStream = fs.createWriteStream(outputPath);
+        targetStream = fs.createWriteStream(outputPath, { flags: 'a' });
     } else {
         targetStream = process.stdout;
     }
