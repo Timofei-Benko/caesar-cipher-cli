@@ -1,7 +1,8 @@
 # Ceaser Cipher CLI Tool
 
 ## Description
-This is a CLI (Command Line Interface) tool that that allows for encryption / decryption of text.
+This is a CLI (Command Line Interface) tool that that allows for encryption / decryption of text with the help of 
+[Caesar cipher](https://en.wikipedia.org/wiki/Caesar_cipher).
 
 Works only with latin alphabet without diacritics (letters with diacritics or letters such as ß will not be 
 encrypted / decrypted).
