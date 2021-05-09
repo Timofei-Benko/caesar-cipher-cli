@@ -1,0 +1,21 @@
+{
+  "name": "ceaser-cipher-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Timofei-Benko/ceaser-cipher-cli.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Timofei-Benko/ceaser-cipher-cli/issues"
+  },
+  "homepage": "https://github.com/Timofei-Benko/ceaser-cipher-cli#readme"
+}
