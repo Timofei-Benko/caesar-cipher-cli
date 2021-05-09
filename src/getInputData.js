@@ -1,8 +1,5 @@
 const fs = require('fs');
-const { pipeline } = require('stream');
 
-const cipher = require('./cipher');
-const consoleArgs = require('./getConsoleArgs');
 const errorHandler = require('./errorHandler');
 
 const getInput = (path) => {
